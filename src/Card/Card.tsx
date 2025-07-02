@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
 import "./Card.css";
@@ -11,12 +11,19 @@ export interface CardDetails {
   description: string;
 }
 
+const colors = [
+  "coral",
+  "#56ffe5",
+]
+
 interface CardProps {
   cardsData: CardDetails[];
 }
 
 const Card = ({ cardsData }: CardProps) => {
   const firstCardRef = useRef(null);
+
+  const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
   useEffect(() => {
     Splitting();
@@ -32,30 +39,35 @@ const Card = ({ cardsData }: CardProps) => {
 
   return (
     <main id="main">
-      {cardsData.map((card, idx) => (
-        <div
-          className="card"
-          // tabIndex="0"
-          tabIndex={0}
-          key={idx}
-          ref={idx === 0 ? firstCardRef : null}
-        >
-          <img
-            className={styles.image}
-            src={card.image}
-            alt={card.alt ?? card.title}
-          />
-          <div className="text">
-            <h2
-              className={styles.cardTitle}
-              data-splitting=""
-            >
-              {card.title}
-            </h2>
-            <p data-splitting="">{card.description}</p>
+      {cardsData.map((card, idx) => {
+        const highlight = getRandomColor();
+        return (
+          <div
+            className="card"
+            style={{ "--highlight": highlight }}
+            // tabIndex="0"
+            tabIndex={0}
+            key={idx}
+            ref={idx === 0 ? firstCardRef : null}
+          >
+            <img
+              className={styles.image}
+              src={card.image}
+              alt={card.alt ?? card.title}
+            />
+            <div className="text">
+              <h2
+                className={styles.cardTitle}
+                data-splitting=""
+              >
+                {card.title}
+              </h2>
+              <p data-splitting="">{card.description}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      }
+      )}
     </main>
   );
 };
