@@ -457,6 +457,11 @@
   dependencies:
     csstype "^3.0.2"
 
+"@types/splitting@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@types/splitting/-/splitting-1.0.6.tgz#05c5d1d46b714b05b7274b3545a285a0130b1243"
+  integrity sha512-sa2UEbnCEP4n9QHxyRDB5VgaSq2J5swWhePA38WRKIHg+yLKQLMWYSS4utEhv/qQ+5o9w6cS69/Y8oPolJxF+w==
+
 "@typescript-eslint/eslint-plugin@8.35.1":
   version "8.35.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.35.1.tgz#06b1129fe26d6532abd58fb2b3fe9810bd016935"
@@ -1229,6 +1234,11 @@ source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
+
+splitting@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/splitting/-/splitting-1.1.0.tgz#e89102aa21f4f459d62e9fc027164dfb4fb8298d"
+  integrity sha512-6Tj+4mvlSti4DUu1yl0PnkHIIoLchFYJHqz2DnwYkvEehXbjrR2epa4ds/xdto6ZdZsC+NP5IOOehi9VGjNlMQ==
 
 strip-json-comments@^3.1.1:
   version "3.1.1"
