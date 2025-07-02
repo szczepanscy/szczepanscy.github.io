@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
 import "./Card.css";
-// import styles from "./Card.module.css";
+import styles from "./Card.module.css";
 
 export interface CardDetails {
   title: string;
@@ -40,9 +40,18 @@ const Card = ({ cardsData }: CardProps) => {
           key={idx}
           ref={idx === 0 ? firstCardRef : null}
         >
-          <img src={card.image} alt={card.alt ?? card.title} />
+          <img
+            className={styles.image}
+            src={card.image}
+            alt={card.alt ?? card.title}
+          />
           <div className="text">
-            <h2 data-splitting="">{card.title}</h2>
+            <h2
+              className={styles.cardTitle}
+              data-splitting=""
+            >
+              {card.title}
+            </h2>
             <p data-splitting="">{card.description}</p>
           </div>
         </div>
