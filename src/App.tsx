@@ -36,7 +36,11 @@ const cardsData: CardDetails[] = [
     title: "Królestwo w Dolinie",
     image: "https://aleplanszowki.pl/32511-medium_default/krolestwo-w-dolinie.jpg",
     description: "Jeszcze nie graliśmy"
-
+  },
+  {
+    title: "Terraformacja Marsa",
+    image: "https://files.rebel.pl/products/108/5438/_99856/box_3d_TerraformacjaMarsa_podstawka-1200x900-ffffff-jpg.webp",
+    description: "Nawet fajne. Kilka dodatków mamy ale nie wszystkie"
   }
 ];
 
