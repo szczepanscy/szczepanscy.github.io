@@ -4,7 +4,7 @@ import "splitting/dist/splitting.css";
 import "./Card.css";
 import styles from "./Card.module.css";
 
-interface CardDetails {
+export interface CardDetails {
   title: string;
   image: string;
   alt?: string;

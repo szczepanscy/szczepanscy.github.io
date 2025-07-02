@@ -1,7 +1,6 @@
-import './App.css'
-import Card from './Card/Card'
+import Card, { type CardDetails } from './Card/Card'
 
-const cardsData = [
+const cardsData: CardDetails[] = [
   {
     title: "Tawantinsuyu",
     image:
@@ -23,6 +22,11 @@ const cardsData = [
     description:
       "Mamy juz wszystkie cześći Dixita. Więc nie chcemy też żadnych dodatków do tego.",
   },
+  {
+    title: "Dwergar",
+    image: "https://aleplanszowki.pl/23403-medium_default/dwergar-edycja-polska.jpg",
+    description: "Jeszcze nie graliśmy"
+  }
 ];
 
 function App() {
