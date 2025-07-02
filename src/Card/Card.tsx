@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef } from "react";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { useEffect, useRef } from "react";
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
 import "./Card.css";
@@ -44,6 +45,7 @@ const Card = ({ cardsData }: CardProps) => {
         return (
           <div
             className="card"
+            // @ts-ignore
             style={{ "--highlight": highlight }}
             // tabIndex="0"
             tabIndex={0}
