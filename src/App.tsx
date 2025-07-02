@@ -26,6 +26,11 @@ const cardsData: CardDetails[] = [
     title: "Dwergar",
     image: "https://aleplanszowki.pl/23403-medium_default/dwergar-edycja-polska.jpg",
     description: "Jeszcze nie graliśmy"
+  },
+  {
+    title: "Cyberpunk: Gangi Night City",
+    image: "https://files.rebel.pl/products/1065/5759/_2023475/cyberpunk-2077-gangi-night-city.jpg",
+    description: "Jeszcze nie grałem ale uwielbiam Cyberpunka"
   }
 ];
 
