@@ -135,8 +135,8 @@ main {
 }
 
 p {
-  font-size: 12px;
-  font-size: clamp(10px, 1.25vw, 14px);
+  font-size: 16px;
+  font-size: clamp(10px, 1.25vw, 16px);
   line-height: 1.4;
   text-align: justify;
   margin-top: 0.2em;
