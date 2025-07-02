@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import Splitting from "splitting";
 import "splitting/dist/splitting.css";
 import "./Card.css";
-import styles from "./Card.module.css";
+// import styles from "./Card.module.css";
 
 export interface CardDetails {
   title: string;
